@@ -1,0 +1,31 @@
+const int ledOne = 3;
+const int ledTwo = 4;
+const int ledThree = 5;
+
+void setup()
+{
+pinMode(ledOne,OUTPUT);
+delay(500);
+pinMode(ledTwo,OUTPUT);
+delay(500);
+pinMode(ledThree,OUTPUT);
+}
+
+
+void loop()
+{
+digitalWrite(ledOne,HIGH);
+digitalWrite(ledTwo,LOW);
+digitalWrite(ledThree,LOW);
+delay(500);
+
+digitalWrite(ledOne,LOW);
+digitalWrite(ledTwo,HIGH);
+digitalWrite(ledThree,LOW);
+delay(500);
+
+digitalWrite(ledOne,LOW);
+digitalWrite(ledTwo,LOW);
+digitalWrite(ledThree,HIGH);
+delay(500);
+}
